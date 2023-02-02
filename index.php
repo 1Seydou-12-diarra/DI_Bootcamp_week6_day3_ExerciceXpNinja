@@ -43,15 +43,6 @@
         totalOvers($balls);
         ?>
     </body>
-</html>
-
-
-
-
-
-
-
-
-    
+</html>  
 </body>
 </html>
