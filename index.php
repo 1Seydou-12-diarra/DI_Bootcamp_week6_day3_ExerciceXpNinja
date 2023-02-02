@@ -17,30 +17,15 @@
     </head>
     <body>
         <?php
-            $balls = 2400;
-            // $firstValue = 2400;
-            // $secondValue = 164;
-            // $firdValue = 945;
-            // $fordValue = 5;
-            function totalOvers($balls)
+            
+            function totalOvers( int $balls) : float | int | string 
             {
-                if ($balls % 6 == 0) {
-                    echo $balls/6;
-                } elseif ($balls == 164)
-                {
-                    echo $balls/6.029;
-                }
-                elseif ($balls == 945)
-                {
-                    echo $balls/6.0076;
-                } elseif ($balls == 5)
-                {
-                    echo $balls/10;
-                } else {
-                    echo "Nombre inconnu";
-                }
+                $overs = floor($balls / 6);
+                $ball = $balls % 6;
+                return  (float) $overs .'.' .$ball;
+              
             }
-        totalOvers($balls);
+        echo totalOvers(164);
         ?>
     </body>
 </html>  
